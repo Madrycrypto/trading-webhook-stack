@@ -3,8 +3,10 @@
 ## 📡 TWÓJ WEBHOOK URL:
 
 ```
-http://72.61.139.13:3000/webhook/tradingview
+http://72.61.139.13/webhook/tradingview
 ```
+
+**UWAGA:** TradingView wymaga portu 80 (bez numeru portu w URL!)
 
 ---
 
@@ -246,10 +248,10 @@ docker-compose logs -f
 
 ---
 
-## KROK 8: Otwórz port 3000 w firewall
+## KROK 8: Otwórz port 80 w firewall
 
 ```bash
-ufw allow 3000/tcp
+ufw allow 80/tcp
 # LUB w panelu Hostinger dodaj regułę firewall
 ```
 
@@ -259,10 +261,10 @@ ufw allow 3000/tcp
 
 ```bash
 # Test health
-curl http://localhost:3000/health
+curl http://localhost/health
 
 # Test webhook
-curl -X POST http://localhost:3000/webhook/tradingview \
+curl -X POST http://localhost/webhook/tradingview \
   -H "Content-Type: application/json" \
   -d '{"ticker":"XAUUSD","action":"LONG","price":"2345.50"}'
 ```
@@ -273,7 +275,7 @@ curl -X POST http://localhost:3000/webhook/tradingview \
 
 W przeglądarce:
 ```
-http://72.61.139.13:3000/health
+http://72.61.139.13/health
 ```
 
 Powinno zwrócić: `{"status":"ok","port":3000}`
@@ -284,8 +286,10 @@ Powinno zwrócić: `{"status":"ok","port":3000}`
 
 TradingView Webhook URL:
 ```
-http://72.61.139.13:3000/webhook/tradingview
+http://72.61.139.13/webhook/tradingview
 ```
+
+**Bez numeru portu - port 80 jest domyślny dla HTTP!**
 
 Message (JSON):
 ```json
