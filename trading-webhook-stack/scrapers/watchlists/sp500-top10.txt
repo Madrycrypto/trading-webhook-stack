@@ -1,0 +1,13 @@
+# S&P 500 Top 10 by Market Cap
+# Run: python sec_monitor.py --watchlist scrapers/watchlists/sp500-top10.txt
+
+MSFT  # Microsoft
+AAPL  # Apple
+NVDA  # NVIDIA
+AMZN  # Amazon
+META  # Meta
+GOOGL # Alphabet (Class A)
+GOOG  # Alphabet (Class C)
+BRK.B # Berkshire Hathaway
+LLY   # Eli Lilly
+AVGO  # Broadcom

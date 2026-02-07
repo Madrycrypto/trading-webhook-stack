@@ -1,0 +1,18 @@
+# Top Tech Stocks - Insider Trading Watchlist
+# Run: python sec_monitor.py --watchlist scrapers/watchlists/tech-stocks.txt
+
+AAPL  # Apple Inc.
+MSFT  # Microsoft Corporation
+GOOGL # Alphabet Inc.
+META  # Meta Platforms Inc.
+NVDA  # NVIDIA Corporation
+TSLA  # Tesla Inc.
+AMD   # Advanced Micro Devices
+INTC  # Intel Corporation
+CRM   # Salesforce Inc.
+ORCL  # Oracle Corporation
+ADBE  # Adobe Inc.
+AVGO  # Broadcom Inc.
+CSCO  # Cisco Systems
+ACN   # Accenture plc
+IBM   # IBM

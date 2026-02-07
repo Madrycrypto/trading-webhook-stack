@@ -1,0 +1,26 @@
+# Insider Trading Data Fetcher Requirements
+# Install with: pip install -r requirements-insider-trading.txt
+
+# Core dependencies
+requests>=2.31.0
+pandas>=2.0.0
+
+# Optional dependencies for enhanced functionality
+numpy>=1.24.0
+
+# Database support (optional)
+psycopg2-binary>=2.9.0  # PostgreSQL
+pymongo>=4.0.0  # MongoDB
+
+# API clients (optional)
+python-telegram-bot>=20.0
+
+# Utilities
+python-dateutil>=2.8.0
+pytz>=2023.0
+
+# Development dependencies (optional)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0

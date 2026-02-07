@@ -1,0 +1,28 @@
+# Web Scraping & Monitoring Requirements
+# Python dependencies for insider trading scrapers
+
+# Async HTTP client
+aiohttp>=3.9.0
+
+# RSS parsing
+feedparser>=6.0.10
+
+# Web scraping
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+requests>=2.31.0
+
+# Browser automation
+playwright>=1.40.0
+
+# Data processing
+pandas>=2.1.0
+
+# Database
+sqlite3  # Built-in with Python
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Logging
+colorlog>=6.8.0

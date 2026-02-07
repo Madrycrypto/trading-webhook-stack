@@ -1,0 +1,32 @@
+{
+  "name": "insider-trading-scrapers",
+  "version": "1.0.0",
+  "description": "Insider trading scrapers for financial data monitoring",
+  "main": "index.js",
+  "scripts": {
+    "start": "node scrapers/index.js",
+    "dev": "nodemon scrapers/index.js",
+    "test": "node scrapers/test.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.6.0",
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "insider-trading",
+    "scraper",
+    "financial",
+    "sec",
+    "webhook"
+  ],
+  "author": "",
+  "license": "MIT"
+}
